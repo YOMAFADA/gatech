@@ -11,12 +11,10 @@ class RiakServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        $this->app->singleton(Connection::class, function ($app) {
-            return new Connection(config('riak'));
-        });
-    }
+    public function register(){
+        //add this
+        Schema::defaultStringLength(191);
+     }
 
     /**
      * Bootstrap services.
