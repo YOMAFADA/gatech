@@ -9,10 +9,10 @@ class AppServiceProvider extends ServiceProvider{
   *
   * @return void
   */
-  $this->app->singleton(Connection::class, function ($app) {
-    return new Connection(config('riak'));
-});
-}
+  public function register(){
+     //add this
+     Schema::defaultStringLength(191);
+  }
   /**
   * Bootstrap any application services.
   *
