@@ -75,8 +75,8 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
-                        <!-- @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a> -->
+                        @if (Route::has('register'))
+                        <a href="http://devmat.name.ng/">GATECH</a>
                         @endif
                     @endauth
                 </div>
@@ -87,7 +87,7 @@
             <img src="/image/a.jpg"/>
             </div>
                 <div class="title m-b-md">
-                    G A TECHNOLOGY
+                    DEVMAT, Home of Innovation
                 </div>
 
                 <div class="links">
